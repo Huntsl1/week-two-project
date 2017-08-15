@@ -24,3 +24,739 @@ copyright text: #FFFFFF
 
 
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+* {
+box-sizing: border-box;
+margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+a, p, h1, h2, h3, h4, h5, h6, ul, li, span, label, button {
+  font-family: 'PT Sans';
+  color: #0B1942;
+  font-weight: bold;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+p, li {
+  font-size: 0.83rem;
+}
+
+p {
+  line-height: 150%;
+}
+
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  max-height: 10%;
+}
+
+/*Top Nav*/
+
+.header-image {
+  margin: 0;
+  background-color: #F5005B;
+  flex-basis: 25%;
+  padding: 2%;
+  width: 100%;
+  height: 100%;
+}
+
+.header-image img {
+  height: auto;
+  width: auto;
+  max-height: 20vh;
+}
+
+
+#top-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-basis: 75%;
+  align-items: center;
+  width: 100%;
+}
+
+#top-nav .nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 2% 0;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #FFFFFF;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.nav-link a {
+  height: auto;
+}
+
+#home-link {
+  background-color: #00A5BF;
+
+}
+
+#calendar-link {
+  background-color: #00B7D3;
+
+}
+
+#join-link {
+  background-color: #00D5E7;
+
+}
+
+/*Home Page container # 2*/
+
+h1 {
+  padding-bottom: 2%;
+}
+
+.section-top {
+  background-color: #FFFFFF;
+  padding: 4%;
+}
+
+
+.section-top h2 {
+  padding: 1% 4%;
+}
+
+.section-top p {
+  padding: 2% 0;
+}
+
+.get-involved-title {
+  background-color: #0B1942;
+}
+
+.get-involved-title h2 {
+  color: #FFFFFF;
+}
+
+/*Home "Up Next" Section*/
+
+.section-bottom {
+  background-color: #0B1942;
+}
+
+.section-bottom h1 {
+  color: #FFFFFF;
+  padding: 0 4%;
+}
+
+.next-film, .film-box-container {
+  background-color: #E2E2E2;
+  padding: 2%;
+}
+
+.film-layout {
+  padding: 4%;
+}
+
+.next-film {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin: 5% 0;
+}
+
+.next-film h5 {
+  color: #0B1942;
+}
+
+.next-film-image, .next-film-info {
+  flex-basis: 45%;
+}
+
+.next-film-title {
+  padding: 2% 0 6% 0;
+}
+
+.next-film-title h3 {
+  padding-bottom: 4%;
+}
+
+.next-film-title a {
+  color: #00B7D3;
+}
+
+.next-film-themes {
+  border-top: 1px solid #0B1942;
+  padding: 4% 0 0 0;
+}
+
+.next-film-themes ul, li {
+  list-style: circle;
+  margin: 4% 0 0 7%;
+  padding: 0;
+}
+
+.next-film-themes h5 {
+  font-weight: 600;
+}
+
+.film-box-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  padding: 4% 0;
+  margin: 3% 0;
+}
+
+.film-box {
+  flex-basis: 40%;
+  padding-bottom: 4%;
+}
+
+.film-box a, p, span {
+  font-size: 0.75rem;
+}
+
+.film-title a {
+  color: #00B7D3;
+}
+
+.film-date {
+  font-weight: bold;
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  min-height: 10vh;
+}
+
+#bottom-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  min-height: 10vh;
+}
+
+#bottom-nav .nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  padding: 4%;
+}
+
+.legal-footer {
+  background-color: #7DDFE8;
+  text-align: center;
+  padding: 7%;
+  width: 100%;
+}
+
+.legal-footer p {
+  color: #FFFFFF;
+  width: 100%;
+}
+
+
+/*CALENDAR PAGE*/
+
+.section-bottom h1 {
+  padding-top: 5%;
+}
+
+.section-bottom h5 {
+  color: #FFFFFF;
+}
+
+.calendar {
+  margin: 0;
+  padding: 7% 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.day {
+  border: 2px solid #0B1942;
+  flex-basis: 14.27%;
+  min-height: 15vw;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.date-number {
+  min-width: 7vw;
+  margin: 0;
+  padding: 5%;
+  background-color: #0B1942;
+  text-align: center;
+}
+
+.show-day {
+  background-color: #F5005B;
+}
+
+.blank-day {
+  background-color: #0B1942;
+}
+
+
+/*JOIN PAGE*/
+
+.join-form p {
+  padding: 0;
+}
+
+input {
+  width: 100%;
+  font-size: 0.8em;
+}
+
+.genre-choice input {
+  width: auto;
+}
+
+.name-info, .email-info, .first-password, .second-password {
+  padding-bottom: 4%;
+}
+
+.pic-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 3%;
+}
+
+.pic-info-text {
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.pic-info img {
+  max-height: 50vh;
+  padding: 2%;
+  border-radius: 50%;
+}
+
+.profile-genre {
+  padding-top: 4%;
+}
+
+.profile-genre p {
+  padding: 1.5% 0;
+}
+
+.genre-category {
+  padding: 0.5% 0;
+}
+
+.profile-adds {
+  padding-top: 7%;
+}
+
+.additional-title {
+  padding: 1% 0;
+}
+
+.profile-adds textarea {
+  width: 100%;
+}
+
+.join-button {
+  padding: 5% 0;
+}
+
+label {
+  font-size: 0.8em;
+}
+
+button {
+  background-color: #F5005B;
+  color: white;
+  width: 35%;
+  border: none;
+  padding: 3%;
+  font-weight: 500;
+  font-size: 0.75em;
+}
+
+
+
+/*Tablet Display*/
+
+@media screen and ( min-width: 545px ) {
+
+  /*HOME PAGE*/
+
+  p, li {
+    font-size: 0.85rem;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: center;
+  }
+
+  .header-image {
+    margin: 0;
+    background-color: #F5005B;
+    flex-basis: 15%;
+    padding: 1%;
+  }
+
+  .header-image img {
+    width: auto;
+    max-height: 15vh;
+  }
+
+  #top-nav {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: #7DDFE8;
+  }
+
+  #top-nav .nav-link {
+    flex-basis: 15%;
+  }
+
+  .break {
+    flex-basis: 55%;
+  }
+
+
+  .get-involved-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .get-involved-text {
+    flex: 1;
+  }
+
+  #take-notes {
+    margin: 0 3%;
+  }
+
+  .film-box-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 2% 0;
+  }
+
+  .film-box {
+    flex-basis: 20%;
+    padding-bottom: 4%;
+  }
+
+  .next-film-themes ul, li {
+    margin: 4% 0 0 5%;
+  }
+
+  .film-box a, span {
+    font-size: .8em;
+  }
+
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    width: 100%;
+    min-height: 15vh;
+  }
+
+  #bottom-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
+
+  #bottom-nav .nav-link {
+    width: 100%;
+    padding: 2%;
+  }
+
+  .legal-footer {
+    background-color: #7DDFE8;
+    padding: 4%;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .legal-footer p {
+    text-align: right;
+  }
+
+
+  /*CALENDAR PAGE*/
+
+  .day {
+    flex-basis: 14.27%;
+  }
+
+  .date-number {
+    min-width: 4vw;
+    margin: 0;
+    padding: 5%;
+  }
+
+
+
+  /*JOIN PAGE*/
+  .profile-basic {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+  }
+
+  .pic-info img {
+    width: auto;
+    max-height: 35vh;
+  }
+
+  .pic-info {
+    flex-basis: 50%;
+  }
+
+  .name-email-and-password {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: stretch;
+  }
+
+  .name-email, .password-and-confirm {
+    width: 100%;
+  }
+
+  .genre-choice {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+
+  }
+
+  .genre-category {
+    flex-basis: 50%;
+    text-align: left;
+  }
+
+  button {
+    width: 25%;
+  }
+
+}
+
+/*Desktop Display*/
+
+@media screen and ( min-width: 769px ) {
+
+/*HOME PAGE*/
+
+p, li {
+  font-size: 0.85rem;
+}
+
+  body {
+    margin: 0 4%;
+    background-color: black;
+  }
+
+  .header-image {
+    flex-basis: 10%;
+  }
+
+  .break {
+    flex-basis: 70%;
+  }
+
+  .film-layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+  }
+
+  .next-film {
+    margin: 0% 2% 0% 0%;
+    flex: 1;
+  }
+
+  .next-film-themes ul, li {
+    margin: 4% 0% 0% 7%;
+  }
+
+  .film-box-container {
+    flex: 1;
+    margin-left: 2%;
+  }
+
+  .film-box {
+    flex-basis: 40%;
+    padding-bottom: 4%;
+  }
+
+  .film-box a, span {
+    font-size: .85em;
+  }
+
+  #bottom-nav {
+    flex-basis: 40%;
+  }
+
+
+  /*CALENDAR PAGE*/
+
+  .day {
+    flex-basis: 14.27%;
+  }
+
+  .date-number {
+    min-width: 3vw;
+    margin: 0;
+    padding: 2%;
+
+  }
+
+
+  /*JOIN PAGE*/
+
+  p, label {
+    font-size: 0.9em;
+  }
+
+  .profile-basic {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .pic-info img {
+    width: auto;
+    max-height: 35vh;
+  }
+
+  .pic-info {
+    flex-basis: 33.33%;
+  }
+
+  .name-email-and-password {
+    flex-basis: 66.66%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: flex-start;
+  }
+
+  .name-email {
+    margin-right: 2%;
+  }
+
+  .password-and-confirm {
+    margin-left: 2%;
+  }
+
+  .genre-category {
+    flex-basis: 33.33%;
+    text-align: left;
+    padding: 0.5% 0%;
+  }
+
+  .profile-adds textarea {
+    width: 75%;
+  }
+
+  button {
+    width: 25%;
+    font-size: 0.9em;
+  }
+
+}
